@@ -3,7 +3,7 @@ package Test;
 public class Test {
 	public static void main(String args[]){  
 		   String s1="Sachin";  
-		   
+		      
 		   int n = s1.length()-1;
 		   System.out.println(n);
 		   for(int i=n; i>=0; i--) {
