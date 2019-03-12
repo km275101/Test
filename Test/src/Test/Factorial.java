@@ -8,7 +8,7 @@ public class Factorial {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the number");
 		//int n = sc.nextInt();
-		int n =10;
+		int n =5;
 		double sum = 1;
 		while(n>0) {
 			sum = sum * n;
