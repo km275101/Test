@@ -6,10 +6,11 @@ public class Pattern5 {
 
 	/**
 	 * Pattern5 ------------------
-	 *
-	 ***
-	 *****
-	 *******
+	  	 *
+	    ***
+	   *****
+	  *******
+
 	 * -----------------------
 	 */
 
@@ -17,19 +18,22 @@ public class Pattern5 {
 		System.out.println("Enter the number : ");
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
-		int count = 0;
 		for (int i = 1; i <= n; i++) {
 			for (int j = n; j > i; j--) {
 
 				System.out.print(" ");
 
 			}
-			for (int k = 1; k <= i+count; k++) {
+			for (int k = 1; k <= i; k++) {
 
 				System.out.print("*");
 
 			}
-			count = count+1;
+			for (int l = 2; l <= i; l++) {
+
+				System.out.print("*");
+
+			}
 			System.out.println();
 		}
 
