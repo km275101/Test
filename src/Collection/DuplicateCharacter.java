@@ -8,7 +8,7 @@ public class DuplicateCharacter {
 	
 	public static void duplicateCharacterMap(String s) {
 		
-		Map<Character, Integer> m = new HashMap<Character, Integer>();
+		Map< Character, Integer> m = new HashMap<Character, Integer>();
 		
 		char[] c = s.toCharArray();
 		for(Character c1 : c) {
@@ -19,17 +19,23 @@ public class DuplicateCharacter {
 			}
 		}
 		
-		//System.out.println("Duplicate character is :"+m);
-		
+		//iterating over map.entry
 		for(Map.Entry<Character, Integer> entry : m.entrySet()) {
 			System.out.println(entry.getKey()+" = "+entry.getValue());
 		}
 		
+		//iterating over keySet and values()
+		for(Character c1: m.keySet()) {
+			System.out.println("key is :"+c1+" and value is"+m.get(c1));
+		}
+		for(Integer c2: m.values()) {
+			System.out.println("value is :"+c2);
+		}
 	}
 
 	public static void main(String[] args) {
 		
-		String s = "Java";
+		String s = "javajj";
 		duplicateCharacterMap(s);
 	}
 
