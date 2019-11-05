@@ -13,6 +13,7 @@ public class DuplicateCharacter {
 		char[] c = s.toCharArray();
 		for(Character c1 : c) {
 			if(m.containsKey(c1)) {
+				//m.get(c1)+1;
 				m.put(c1, m.get(c1)+1);
 			}else {
 				m.put(c1, 1);
