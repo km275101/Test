@@ -3,16 +3,19 @@ package ConstructorsAndStatic;
 public class StaticInitaialize {
 	
 	
-	static int count;
+	static int count = 0; 
 	
 	public void test() {
-		System.out.println(count);
+		System.out.println(":::::::::"+count);
 	}
 	
 	public StaticInitaialize() {
-		count = count+1;
+		count++;
 	}
 	
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		StaticInitaialize t1 = new StaticInitaialize();
 		t1.test();

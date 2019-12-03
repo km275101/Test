@@ -1,4 +1,4 @@
-package Test;
+package CommonPrograms;
 
 import java.util.Scanner;
 
