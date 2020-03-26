@@ -3,6 +3,9 @@ package Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 
 public class DuplicateCharacter {
 	
@@ -13,7 +16,6 @@ public class DuplicateCharacter {
 		char[] c = s.toCharArray();
 		for(Character c1 : c) {
 			if(m.containsKey(c1)) {
-				//m.get(c1)+1;
 				m.put(c1, m.get(c1)+1);
 			}else {
 				m.put(c1, 1);
@@ -33,11 +35,31 @@ public class DuplicateCharacter {
 			System.out.println("value is :"+c2);
 		}
 	}
-
+ 
+	public static void duplicateRegex(String s) {
+		//String c = "a";
+		//int count = 0;
+		StringBuffer sb = new StringBuffer();
+		char[] cc = s.toCharArray();
+		for(Character c1 : cc) {
+			int count = 0;
+			Pattern p = Pattern.compile(c1.toString());
+			Matcher m = p.matcher(s);
+			
+			while(m.find()) {
+				count++;
+			}
+			System.out.println(c1+" "+count);
+			s.replaceAll(c1.toString(), "");
+		}
+		}
+		
+	
 	public static void main(String[] args) {
 		
 		String s = "javajj";
-		duplicateCharacterMap(s);
+		duplicateRegex(s);
+		//duplicateCharacterMap(s);
 	}
 
 }

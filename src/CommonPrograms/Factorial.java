@@ -16,7 +16,7 @@ public class Factorial {
 			return 1;
 			return d*recursiveFact(d-1);
 	}
-
+ 
 	public static void main(String[] args) {
 		double fact1 = fact(5);
 		double fact2 = recursiveFact(5);
