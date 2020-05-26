@@ -4,5 +4,8 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="hackerRank"/>
 	<classpathentry kind="src" path="hackerRankInterviewPreprationKit"/>
+	<classpathentry kind="src" path="dataStructure"/>
+	<classpathentry kind="src" path="Java8"/>
+	<classpathentry kind="src" path="Sorting"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

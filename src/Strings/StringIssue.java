@@ -9,9 +9,10 @@ public class StringIssue {
 		
 		 String str = "{sharedobject.QUERY10860}.2 {sharedobject.QUERY11141}.1";
 		 
-		 
-		 String[] split = str.split( " " );
-		 System.out.println(split[0]);
+		 String message = "The document (Purchase Order) PO51 was submitted for approval.";
+		 String[] split = message.split( "\\) " );
+		 String[] split1 = split[1].split( " " );
+		 System.out.println(split1[0]);
 		 System.out.println(split[1]);
 		 int count = 0;
 		 Pattern pattern = Pattern.compile("\\{sharedobject.");

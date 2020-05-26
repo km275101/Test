@@ -1,4 +1,4 @@
-package Sorting;
+package BubbleSort;
 
 import java.util.Scanner;
 
@@ -23,6 +23,7 @@ public class BubbleSort {
 
 	}
 
+	//also print the count of max swaps
 	static int bubbleSortAsc(int A[]) {
 		int size = A.length;
 		int counnt = 0;
@@ -73,6 +74,32 @@ public class BubbleSort {
 		System.out.println(maxSum - minSum);
 		
 	}
+	
+	
+	
+	static int count =0 ;
+    // Complete the countSwaps function below.
+    static void countSwaps(int[] a) {
+        int s = a.length;
+        for(int i =0; i < s-1; i++){
+            for(int j =0; j < s-i-1; j++){
+            if(a[j]>a[j+1]){
+
+                int temp = a[j];
+                a[j] = a[j+1];
+                a[j+1] = temp;
+
+                count++;
+
+            }
+        }
+
+        
+        }
+        System.out.println("Array is sorted in "+count+" swaps.");
+        System.out.println("First Element: "+a[0]);
+        System.out.println("Last Element: "+a[s-1]);
+    }
 	public static void main(String[] args) {
 
 		/*
@@ -86,9 +113,13 @@ public class BubbleSort {
 		int[] array = { 5,4,3,2,1 };
 		//int c = bubbleSortAsc(array);
 		//System.out.println(c);
-		
-		maxMinSumAndTheirDiff(array, 5, 1);
+		bubbleSortAsc(array);
+		//maxMinSumAndTheirDiff(array, 5, 1);
 
 	}
+	
+	
+	
+	
 
 }

@@ -1,6 +1,7 @@
-package Sorting;
+package BubbleSort;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -36,13 +37,13 @@ public class BubbleSort_CSortOut {
 		
 	}
 	
-	static void bubbleSortAscMap(double[] array, Map m) {
+	static void bubbleSortAscMap(int[] array, Map m) {
 		int size = array.length;
 		 
 		for (int i = 0; i < size - 1; i++) {
 			for (int k = 0; k < size - i - 1; k++) {
 				if (array[k] > array[k + 1]) {
-					double temp = array[k + 1];
+					int temp = array[k + 1];
 					array[k + 1] = array[k];
 					array[k] = temp;
 					
@@ -62,14 +63,15 @@ public class BubbleSort_CSortOut {
 		//int[] array = null ; //= {4,5,3,7,1};
         Scanner sc = new Scanner(System.in);
         int l = sc.nextInt();
-        double[] array = new double[l];
+        int[] array = new int[l];
         
         for(int a=0; a<l;a++){
-            array[a] = sc.nextDouble(); 
+            array[a] = sc.nextInt();
         }
-		ArrayList<Integer> ar = new ArrayList<>();
 		LinkedHashMap<Double, Integer> m = new LinkedHashMap<Double, Integer>();
 		int c =0;
+		
+		
 		for(double i : array) {
 			
 			m.put(i, c);
