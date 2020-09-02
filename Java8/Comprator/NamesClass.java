@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class NamesClass {
 	
-	 String name;
+	String name;
 	public NamesClass(String name) {
 		this.name = name;
 	}

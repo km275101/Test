@@ -9,6 +9,7 @@ public class Anagram {
 		
 		char[] a = s1.toCharArray();
 		char[] b = s2.toCharArray();
+		
 		boolean flag = false;
 		if(a.length == b.length) {
 			
@@ -57,6 +58,9 @@ static boolean m2(String s1, String s2) {
 	}
 
 	public static void main(String[] args) {
+		
+		 m2("Silent", "Listen");
+		 
 		Scanner scan = new Scanner(System.in);
         String a = scan.next();
         String b = scan.next();

@@ -7,5 +7,7 @@
 	<classpathentry kind="src" path="dataStructure"/>
 	<classpathentry kind="src" path="Java8"/>
 	<classpathentry kind="src" path="Sorting"/>
+	<classpathentry kind="src" path="hackerearth"/>
+	<classpathentry kind="src" path="Miscelleneous"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
