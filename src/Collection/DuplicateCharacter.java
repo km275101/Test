@@ -39,7 +39,7 @@ public class DuplicateCharacter {
 	public static void duplicateRegex(String s) {
 		//String c = "a";
 		//int count = 0;
-		StringBuffer sb = new StringBuffer();
+		StringBuffer sb = new StringBuffer(s);
 		char[] cc = s.toCharArray();
 		for(Character c1 : cc) {
 			int count = 0;
@@ -58,8 +58,8 @@ public class DuplicateCharacter {
 	public static void main(String[] args) {
 		
 		String s = "javajj";
-		duplicateRegex(s);
-		//duplicateCharacterMap(s);
+		//duplicateRegex(s);
+		duplicateCharacterMap(s);
 	}
 
 }

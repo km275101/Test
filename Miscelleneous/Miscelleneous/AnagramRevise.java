@@ -55,7 +55,7 @@ public class AnagramRevise {
 
 	public static void main(String[] args) {
 
-		Boolean b = findAnagram("Silentsa", "Lisaaten");
+		Boolean b = findAnagram("Listen", "Silent");
 		System.out.println(b);
 	}
 
