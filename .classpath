@@ -9,5 +9,8 @@
 	<classpathentry kind="src" path="Sorting"/>
 	<classpathentry kind="src" path="hackerearth"/>
 	<classpathentry kind="src" path="Miscelleneous"/>
+	<classpathentry kind="src" path="DailyByte"/>
+	<classpathentry kind="src" path="LeetCode"/>
+	<classpathentry kind="src" path="InterviewCollection"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

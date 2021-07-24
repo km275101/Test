@@ -1,6 +1,7 @@
-package BubbleSort;
+package SelectionSort;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class SelectionSort {
 	
@@ -52,16 +53,16 @@ public class SelectionSort {
 	
 
     static void selectionSort1(int arr[], int x) {
-    	int count = 0;
+    	int count = 1;
     	int size = arr.length;
     	int min ;
-    	for(int i =0 ; i<size; i++) {
+    	for(int i =0 ; i < size-1; i++) {
     		if(x == count) {
     			printArray(arr);
     		}
     		count++;
     		min = i;
-    		for(int j =i+1; j<size; j++) {
+    		for(int j = i+1; j < size; j++) {
     			if(arr[min] > arr[j]) {
     				min = j;
     			}
@@ -75,10 +76,15 @@ public class SelectionSort {
     }
 	
     public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int[] arr = new int[n];
 		
-		int arr[] = {64,25,12,22,11}; 
+		for(int i=0; i<n; i++) {
+			arr[i] = sc.nextInt();
+		}
         //sort(arr); 
-		selectionSort1(arr,5);
+		selectionSort1(arr,10);
 		
         System.out.println("Sorted array"); 
         printArray(arr); 

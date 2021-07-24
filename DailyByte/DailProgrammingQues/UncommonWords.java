@@ -1,9 +1,45 @@
 package DailProgrammingQues;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.Map;
 import java.util.Set;
 
 public class UncommonWords {
+	
+	public static void uncommonWordsWithHashMap(String a, String b) {
+		String[] aa = a.split(" ");
+		String[] bb = b.split(" ");
+		
+		Map<String, Integer> m = new LinkedHashMap<String, Integer>();
+		
+		for(String s : aa){
+			if(m.containsKey(s)) {
+				m.put(s, m.get(s)+1);
+			}else {
+				m.put(s, 1);
+			}
+		}
+		
+		for(String s : bb){
+			if(m.containsKey(s)) {
+				m.put(s, m.get(s)+1);
+			}else {
+				m.put(s, 1);
+			}
+		}
+		
+//		for(Map.Entry<String, Integer> m1 : m.entrySet()) {
+//			if(! (m.get(m1) > 1)) {
+//				System.out.println(m1.getKey());
+//			}
+//		}
+		System.out.print(m);
+		for(String ss : m.keySet()) {if(!(m.get(ss)>1)) {
+			System.out.println(ss);
+		}}
+	}
 	
 	public static void uncommonWords(String a, String b) {
 		
@@ -49,6 +85,7 @@ public class UncommonWords {
 		String b = "the tortoise lost to the haire";
 		
 		uncommonWords(a, b);
+		uncommonWordsWithHashMap(a, b);
 		
 	}
 

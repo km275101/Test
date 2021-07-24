@@ -21,7 +21,6 @@ public class ValidPalindromeWithRemoval {
      while(i < j) {
 			
 			if(s.charAt(i) != s.charAt(j)) {
-				
 				return false;
 			}
 			i++;j--;
@@ -32,9 +31,12 @@ public class ValidPalindromeWithRemoval {
 	}
 
 	public static void main(String[] args) {
-
 		boolean x = m("agcbbca");
 		System.out.println(x);
 	}
-
 }
+
+/**
+ Given a string and the ability to delete at most one chdaracter, 
+ return whether or not it can form a palindrome.
+ */
