@@ -1,4 +1,4 @@
-package DailProgrammingQues;
+package DailBytesWithString;
 
 import java.util.HashMap;
 import java.util.HashSet;

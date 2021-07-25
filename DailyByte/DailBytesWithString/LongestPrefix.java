@@ -1,4 +1,4 @@
-package DailProgrammingQues;
+package DailBytesWithString;
 
 import com.sun.xml.internal.fastinfoset.util.PrefixArray;
 

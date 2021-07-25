@@ -1,4 +1,4 @@
-package DailProgrammingQues;
+package DailBytesWithString;
 
 public class ReverseString1 {
 	
