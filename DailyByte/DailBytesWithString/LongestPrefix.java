@@ -19,7 +19,7 @@ public class LongestPrefix {
 	public static void main(String[] args) {
  
 		String[] s = {"colorado", "color", "cold"};
-		prefix(s);
+		prefix(s); 
 	}
 
 }
