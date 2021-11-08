@@ -1,6 +1,5 @@
 package DailBytesWithString;
 
-import com.sun.xml.internal.fastinfoset.util.PrefixArray;
 
 public class LongestPrefix {
 	
