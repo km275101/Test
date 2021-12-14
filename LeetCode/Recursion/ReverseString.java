@@ -44,7 +44,7 @@ public class ReverseString {
 		
 		
 		String str = "helloz";
-		//printReverse(str.toCharArray());
+		printReverse(str.toCharArray());
 		
 	   //	printReverse1(str.toCharArray());
 		

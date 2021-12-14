@@ -27,7 +27,7 @@ public class TwoSum {
  
 	public static void main(String[] args) {
 		int[] x = {2,7,3,5,6,8,9};
-		int[] y = twoSum(x,9);
+		int[] y = twoSum(x,17);
 		
 //		for(Integer i : y) {
 //			//System.out.println(i);

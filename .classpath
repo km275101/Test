@@ -12,5 +12,6 @@
 	<classpathentry kind="src" path="DailyByte"/>
 	<classpathentry kind="src" path="LeetCode"/>
 	<classpathentry kind="src" path="InterviewCollection"/>
+	<classpathentry kind="src" path="Anonymous"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
